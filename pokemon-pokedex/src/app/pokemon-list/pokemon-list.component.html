@@ -1,0 +1,11 @@
+<!-- pokemon-list.component.html -->
+<div>
+    <h2>Pokémon List</h2>
+    <!-- Display a list of Pokémon with links to their details -->
+    <ul>
+      <li *ngFor="let pokemon of data">
+        <a routerLink="/pokemon/{{ pokemon.id }}">{{ pokemon.name }}</a>
+      </li>
+    </ul>
+  </div>
+  
